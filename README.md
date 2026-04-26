@@ -1,1 +1,134 @@
 # MANHWA-CLAA
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PL Manhwa Site</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      color: #1f2937;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(59,130,246,0.6);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 55px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    .card p {
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* SECTION TITLE */
+    h2 {
+      margin-top: 30px;
+      color: #2563eb;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-content">
+      <h1>🌸 PL MANHWA SITE 🌸</h1>
+      <p>Read Manhwa for Free in a Clean Pastel Blue World</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2>📚 Popular Manhwa</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://i.imgur.com/w6GNAiP.jpeg">
+        <p>Manhwa 1</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/nEkNUn9.jpeg">
+        <p>Manhwa 2</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/VQONx70.jpeg">
+        <p>Manhwa 3</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
